@@ -1,0 +1,8 @@
+.ca-logo {
+    width: 300px; /* Set the image width */
+    height: 200px; /* Set the image height */
+    display: block; /* Ensure block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 200px;
+  }
+  
