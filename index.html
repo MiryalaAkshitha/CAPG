@@ -1,14 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAPG</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAPG & Co</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ca-favicon1.jpg" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="assets/ca-favicon1.jpg" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="assets/ca-favicon1.jpg" />
+    <!-- <link rel="manifest" href="assets/images/favicons/site.webmanifest" /> -->
+    <meta name="description" content="Your trusted partners for seamless financial solutions, from taxation to corporate compliance." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/vendors/growim-icons/style.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-flipster-master/jquery.flipster.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/growim.css" />
 </head>
-<body>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="main-header main-header--five sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header--five__inner">
+                    <div class="topbar">
+                        <ul class="list-unstyled topbar__info">
+                            <li class="topbar__info__item">
+                                <span class="topbar__info__icon"><i class="flaticon-phone"></i></span>
+                                <a href="tel:+61086660112">9492492970, 9490549793</a>
+                            </li>
+                            <li class="topbar__info__item">
+                                <span class="topbar__info__icon"><i class="flaticon-email"></i></span>
+                                <a href="mailto:capgandco@yahoo.com">capgandco@yahoo.com</a>
+                            </li>
+                        </ul><!-- /.list-unstyled topbar-one__info -->
+                        <div class="topbar__social">
+                           
+                            <a href="https://www.linkedin.com/company/c-a-p-g-co/posts/?feedView=all">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                <span class="sr-only">Linkedin</span>
+                            </a>
+                        </div><!-- /.topbar__social -->
+                    </div>
+                    <div class="main-header__inner">
+                        <div class="main-header__logo">
+                            <a href="index.html">
+                                <img src="assets/calogo.png" alt="calogo" width="320">
+                            </a>
+                        </div><!-- /.main-header__logo -->
+                        <nav class="main-header__nav main-menu">
+                            <ul class="main-menu__list">
+
+
+                                <li class="megamenu megamenu-clickable megamenu-clickable--toggler">
+                                    <a href="index.html">Home</a>
+                                    
+                                </li>
+
+
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                              
+                                <li class="dropdown">
+                                    <a href="#services">Services</a>
+                                    
+                                </li>
+                               
+                               
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav><!-- /.main-header__nav -->
+                        <div class="main-header__right">
+                            <div class="mobile-nav__btn mobile-nav__toggler">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- /.mobile-nav__toggler -->
+                          
+                            <a href="contact.html" class="growim-btn main-header__btn">
+                                <span class="growim-btn__text">Work With Us</span>
+                            </a><!-- /.main-header__btn -->
+                        </div><!-- /.main-header__right -->
+                    </div><!-- /.main-header__inner -->
+                </div>
+            </div><!-- /.container-fluid -->
+        </header><!-- /.main-header -->
+        
+    <section class="portfolio-five" id="portfolio" style="margin-top: 70px;">
+        <!-- <div class="portfolio-five__shape-one" style="background-image: url(assets/images/shapes/portfolio-five-shape-1.png);"></div> -->
+        <div class="portfolio-five__shape-two" style="background-image: url(assets/images/shapes/portfolio-five-shape-2.png);"></div>
+        <div class="portfolio-five__shape-three" style="background-image: url(assets/images/shapes/portfolio-five-shape-3.png);"></div>
+        <div class="container">
+    
+            <div class="portfolio-five__carousel growim-owl__carousel growim-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+        "items": 1,
+        "margin": 30,
+        "loop": false,
+        "smartSpeed": 700,
+        "center": false,
+        "nav": true,
+        "dots": false,
+        "autoplay": true
+        }'>
+                <div class="item">
+                    <div class="portfolio-five__item">
+                        <img src="assets/slide1.jpg" alt="growim">
+                        <div class="portfolio-five__item__content">
+                            <h5 class="portfolio-five__item__cate">Audit</h5>
+                            <h3 class="portfolio-five__item__title">Ensuring accuracy
+                            </h3>
+                        </div><!-- /.portfolio-five__item__content -->
+                    </div><!-- /.portfolio-five__item -->
+                </div><!-- /.item -->
+                <div class="item">
+                    <div class="portfolio-five__item">
+                        <img src="assets/slide2.jpg" alt="growim">
+                        <div class="portfolio-five__item__content">
+                            <h5 class="portfolio-five__item__cate">Income Tax</h5>
+                            <h3 class="portfolio-five__item__title">Expert tax planning
+                            </h3>
+                            <!-- /.portfolio-five__item__number -->
+                        </div><!-- /.portfolio-five__item__content -->
+                    </div><!-- /.portfolio-five__item -->
+                </div><!-- /.item -->
+                <div class="item">
+                    <div class="portfolio-five__item">
+                        <img src="assets/gst.jpg" alt="growim">
+                        <div class="portfolio-five__item__content">
+                            <h5 class="portfolio-five__item__cate">GST</h5>
+                            <h3 class="portfolio-five__item__title">Simplifying GST compliance</h3>
+                        </div><!-- /.portfolio-five__item__content -->
+                    </div><!-- /.portfolio-five__item -->
+                </div><!-- /.item -->
+                <div class="item">
+                    <div class="portfolio-five__item">
+                        <img src="assets/slide5.jpg" alt="growim">
+                        <div class="portfolio-five__item__content">
+                            <h5 class="portfolio-five__item__cate">MCA</h5>
+                            <h3 class="portfolio-five__item__title">Adhering to corporate laws</h3>
+                        </div><!-- /.portfolio-five__item__content -->
+                    </div><!-- /.portfolio-five__item -->
+                </div><!-- /.item -->
+            </div>
+        </div>
+    </section>
+        
+<!-- second start  -->
+  <!-- Service Start -->
+  <section class="service-five" id="services">
+    <div class="service-five__bg" style="background-image: url(assets/images/shapes/service-bg-5.png);"></div>
     <div class="container">
-    <img class="ca-logo"src="./assets/ca-logo.jpg"/>
-</div>
+        <div class="sec-title text-left">
+
+            <h6 class="sec-title__tagline">our best services</h6><!-- /.sec-title__tagline -->
+
+            <h3 class="sec-title__title">Simplifying complexities, 
+                <br> propelling your business.</h3><!-- /.sec-title__title -->
+        </div><!-- /.sec-title -->
+        <div class="service-five__carousel growim-owl__carousel growim-owl__carousel--with-shadow growim-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+        "items": 1,
+        "margin": 30,
+        "loop": false,
+        "smartSpeed": 700,
+        "nav": true,
+        "navText": ["<span class=\"flaticon-long-arrow-left\"></span>","<span class=\"flaticon-long-arrow-right\"></span>"],
+        "dots": false,
+        "autoplay": false,
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 2
+            },
+            "992": {
+                "items": 3
+            },
+            "1200": {
+                "items": 4
+            }
+        }
+    }'>
+            <div class="item">
+                <div class="service-five__item">
+                    <div class="service-five__item__shape" style="background-image: url(assets/images/shapes/service-5-shape.png);"></div>
+                    <div class="service-five__item__icon">
+                        <i class="flaticon-database"></i>
+                    </div>
+                    <h3 class="service-five__item__title">
+                        Auditing
+                    </h3><!-- /.service-title -->
+                    <p class="service-five__item__text">
+                        Ensuring financial accuracy and transparency through comprehensive audits.
+                    </p><!-- /.service-text -->
+                </div><!-- /.service-item -->
+            </div><!-- /.item -->
+            <div class="item">
+                <div class="service-five__item">
+                    <div class="service-five__item__shape" style="background-image: url(assets/images/shapes/service-5-shape.png);"></div>
+                    <div class="service-five__item__icon">
+                        <i class="flaticon-consulting"></i>
+                    </div>
+                    <h3 class="service-five__item__title">
+                        Taxation                    </h3><!-- /.service-title -->
+                    <p class="service-five__item__text">
+                        Optimizing tax liabilities and compliance with tax laws (Income Tax and GST).                    </p><!-- /.service-text -->
+                </div><!-- /.service-item -->
+            </div><!-- /.item -->
+            <div class="item">
+                <div class="service-five__item">
+                    <div class="service-five__item__shape" style="background-image: url(assets/images/shapes/service-5-shape.png);"></div>
+                    <div class="service-five__item__icon">
+                        <i class="flaticon-seo"></i>
+                    </div>
+                    <h3 class="service-five__item__title">
+                        Financial Advisory                    </h3><!-- /.service-title -->
+                    <p class="service-five__item__text">
+                        Providing strategic financial guidance for informed decision-making.
+                    </p><!-- /.service-text -->
+                </div><!-- /.service-item -->
+            </div><!-- /.item -->
+            <div class="item">
+                <div class="service-five__item">
+                    <div class="service-five__item__shape" style="background-image: url(assets/images/shapes/service-5-shape.png);"></div>
+                    <div class="service-five__item__icon">
+                        <i class="flaticon-code"></i>
+                    </div>
+                    <h3 class="service-five__item__title">
+                        <a href="service-details.html">Corporate Law Compliance</a>
+                    </h3><!-- /.service-title -->
+                    <p class="service-five__item__text">
+                        Adhering to corporate regulations .
+                    </p><!-- /.service-text -->
+                </div><!-- /.service-item -->
+            </div><!-- /.item -->
+            <div class="item">
+                <div class="service-five__item">
+                    <div class="service-five__item__shape" style="background-image: url(assets/images/shapes/service-5-shape.png);"></div>
+                    <div class="service-five__item__icon">
+                        <i class="flaticon-sketch"></i>
+                    </div>
+                    <h3 class="service-five__item__title">
+                        Registrations                    </h3><!-- /.service-title -->
+                    <p class="service-five__item__text">
+                        Facilitating smooth business setup and regulatory compliances.                    </p><!-- /.service-text -->
+                </div><!-- /.service-item -->
+            </div><!-- /.item -->
+        </div>
+        
+    </div>
+</section>
+ <!-- fourth start  -->
+ <section class="counter-two">
+    <div class="counter-two__bg wow fadeInRight" style="background-image: url(assets/analytics.jpg);"></div>
+    <div class="container">
+        <ul class="counter-two__counter">
+            <li class="count-box wow fadeInUp" data-wow-delay="100ms">
+                <div class="counter-two__counter__icon"><span class="flaticon-client"></span></div>
+                <div class="counter-two__counter__number">
+                    <span class="count-text" data-stop="2000" data-speed="1500"></span>+
+                </div>
+                <p class="counter-two__counter__text">Served Clients</p>
+            </li><!-- item -->
+            <li class="count-box wow fadeInUp" data-wow-delay="150ms">
+                <div class="counter-two__counter__icon"><span class="flaticon-seo"></span></div>
+                <div class="counter-two__counter__number">
+                    <span class="count-text" data-stop="1000" data-speed="1500"></span>+
+                </div>
+                <p class="counter-two__counter__text">Tax Returns Filed</p>
+            </li><!-- item -->
+            <li class="count-box wow fadeInUp" data-wow-delay="200ms">
+                <div class="counter-two__counter__icon"><span class="flaticon-marketing"></span></div>
+                <div class="counter-two__counter__number">
+                    <span class="count-text" data-stop="50" data-speed="1500"></span>+
+                </div>
+                <p class="counter-two__counter__text">Audits Conducted</p>
+            </li><!-- item -->
+            <li class="count-box wow fadeInUp" data-wow-delay="250ms">
+                <div class="counter-two__counter__icon"><span class="flaticon-media"></span></div>
+                <div class="counter-two__counter__number">
+                    <span class="count-text" data-stop="700" data-speed="1500"></span>+
+                </div>
+                <p class="counter-two__counter__text">Financial Consultations Provided</p>
+            </li><!-- item -->
+        </ul>
+    </div>
+</section>
+ <!-- third end  -->
+<!-- Service End -->
+<!-- second end  -->
+ <!-- fourth start  -->
+ <section class="work-process-two" style="background-image: url(assets/images/shapes/work-process-two-bg-shape.png); margin-bottom: 150px;">
+    <div class="container">
+        <div class="work-process-two__top">
+            <div class="sec-title text-center">
+
+                <h6 class="sec-title__tagline">Work Process</h6><!-- /.sec-title__tagline -->
+
+                <h3 class="sec-title__title">Our Working Process</h3><!-- /.sec-title__title -->
+            </div><!-- /.sec-title -->
+        </div>
+        <div class="row gutter-y-30">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                <div class="work-process-two__item">
+                    <div class="work-process-two__item__icon">
+                        <i class="flaticon-solution"></i>
+
+                        <div class="work-process-two__item__number"></div>
+                    </div>
+                    <h3 class="work-process-two__item__title">Consult</h3>
+                    <p class="work-process-two__item__text">
+                        Understand your needs                    </p>
+                </div>
+            </div><!-- item -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="work-process-two__item work-process-two__item--reverse">
+                    <h3 class="work-process-two__item__title">Analyze</h3>
+                    <p class="work-process-two__item__text">
+                        Assess your financial situation
+                    </p>
+                    <div class="work-process-two__item__icon">
+                        <i class="flaticon-define"></i>
+                        <div class="work-process-two__item__number"></div>
+                    </div>
+                </div>
+            </div><!-- item -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div class="work-process-two__item">
+                    <div class="work-process-two__item__icon">
+                        <i class="flaticon-team"></i>
+                        <div class="work-process-two__item__number"></div>
+                    </div>
+                    <h3 class="work-process-two__item__title">Plan</h3>
+                    <p class="work-process-two__item__text">
+                        Develop tailored strategies                    </p>
+                </div>
+            </div><!-- item -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                <div class="work-process-two__item work-process-two__item--reverse">
+                    <h3 class="work-process-two__item__title">Implement</h3>
+                    <p class="work-process-two__item__text">
+                        Execute for optimal results     </p>
+                    <div class="work-process-two__item__icon">
+                        <i class="flaticon-service"></i>
+                        <div class="work-process-two__item__number"></div>
+                    </div>
+                </div>
+            </div><!-- item -->
+        </div>
+        <div class="work-process-two__border wow fadeInUp" data-wow-delay="400ms" style="background-image: url(assets/images/shapes/work-process-two-border.png);"></div>
+    </div>
+</section><!-- work-process-two -->
+ <!-- fourth end  -->
+  <!-- five start  -->
+  <section class="about-five" id="about">
+    <div class="about-five__bg" style="background-image: url(assets/images/shapes/about-5-bg.png);"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="100ms">
+                <div class="about-five__image">
+                    <img src="assets/about1.jpg" alt="growim">
+                    <div class="about-five__image__border" style="background-image: url(assets/images/shapes/about-5-border.png);"></div>
+                    <div class="about-five__image__two">
+                        <img src="assets/about2.jpg" alt="growim">
+                    </div>
+                    <div class="about-five__experiance count-box wow fadeInUp" data-wow-delay="400ms">
+                        <div class="about-five__experiance__icon"><i class="flaticon-client"></i></div>
+                        <div class="about-five__experiance__years">
+                            <span class="count-text" data-stop="5" data-speed="1500"></span>
+                            years<br> of experience
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
+                <div class="about-five__content">
+                    <div class="sec-title text-left">
+
+                        <h6 class="sec-title__tagline">About Us</h6><!-- /.sec-title__tagline -->
+
+                        <h3 class="sec-title__title">Elevating Your Business,<br>One Financial Step at a Time</h3><!-- /.sec-title__title -->
+                    </div><!-- /.sec-title -->
+                    <p class="about-five__content__text">
+                        With over 5 years of experience, C A P G & Co is a trusted partner for businesses of all sizes. We're committed to simplifying the complex world of finance and taxation, ensuring your business thrives.                    </p>
+                    <div class="row gutter-y-30">
+                        <div class="col-md-6">
+                            <div class="about-five__box">
+                                <div class="about-five__box__icon"><i class="flaticon-bonding"></i></div>
+                                <h5 class="about-five__box__title">Mission</h5>
+                                <p class="about-five__box__text">Empowering businesses through exceptional financial solutions</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-five__box">
+                                <div class="about-five__box__icon"><i class="flaticon-mission"></i></div>
+                                <h5 class="about-five__box__title">Vision</h5>
+                                <p class="about-five__box__text">Leading the way in financial advisory, driving business success</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div><!-- /.why-choose-two__content -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+   <!-- five end  -->
+
+   <!-- six start  -->
+   <section class="faq-one">
+    <div class="faq-one__shape-one" style="background-image: url(assets/images/shapes/faq-1-shape-1.png);"></div>
+    <div class="faq-one__shape-two" style="background-image: url(assets/images/shapes/faq-1-shape-2.png);"></div>
+    <div class="faq-one__shape-three" style="background-image: url(assets/images/shapes/faq-1-shape-3.png);"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+                <div class="sec-title text-left">
+
+                    <h6 class="sec-title__tagline">Faq</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">Frequently Asked & Question</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="faq-one__accordion growim-accrodion" data-grp-name="growim-accrodion">
+                    <div class="accrodion">
+                        <div class="accrodion-title">
+                            <h4>
+                                What is the difference between Tax Planning and Tax Avoidance?
+                                <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                            </h4>
+                        </div><!-- /.accordian-title -->
+                        <div class="accrodion-content">
+                            <div class="inner">
+                                <p>
+                                    Tax planning involves legal strategies to minimize tax liability, while tax avoidance is illegal and involves schemes to evade taxes.
+
+                                </p>
+                            </div><!-- /.accordian-content -->
+                        </div>
+                    </div><!-- /.accordian-item -->
+                    <div class="accrodion active">
+                        <div class="accrodion-title">
+                            <h4>
+                                How often should I get my books audited?
+
+                                <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                            </h4>
+                        </div><!-- /.accordian-title -->
+                        <div class="accrodion-content">
+                            <div class="inner">
+                                <p>
+                                    The frequency of audits depends on factors like company size, industry, and regulatory requirements. However, annual audits are common for most businesses.
+
+                                </p>
+                            </div><!-- /.accordian-content -->
+                        </div>
+                    </div><!-- /.accordian-item -->
+                    <div class="accrodion">
+                        <div class="accrodion-title">
+                            <h4>
+                                What are the key benefits of hiring a Chartered Accountant?
+
+                                <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                            </h4>
+                        </div><!-- /.accordian-title -->
+                        <div class="accrodion-content">
+                            <div class="inner">
+                                <p>
+                                    Chartered Accountants provide expert advice on taxation, financial planning, business setup, compliance, and more. They help businesses save money, avoid penalties, and make informed decisions.
+                                </p>
+                            </div><!-- /.accordian-content -->
+                        </div>
+                    </div><!-- /.accordian-item -->
+                </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="200ms">
+                <div class="faq-one__image">
+                    <img src="assets/images/shapes/faq-1-1.png" alt="growim">
+                </div><!-- /.faq-one__contact -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.faq-one -->
+   <!-- six end  -->
+<!-- seven start  -->
+<!-- <section class="blog-one blog-one--home-three" id="blog">
+    <div class="container">
+        <div class="blog-one__top">
+            <div class="sec-title text-left">
+
+                <h6 class="sec-title__tagline">our NEWS</h6><!-- /.sec-title__tagline -->
+
+                <!-- <h3 class="sec-title__title">Recent Blog Posts</h3>
+            <!-- </div>
+            <a class="growim-btn" href="blog-list-right.html">
+                <span class="growim-btn__text">View All News</span>
+                <span class="growim-btn__icon"><i class="flaticon-up-right-arrow"></i></span>
+            </a>
+        </div>  -->
+        <!-- <div class="blog-one__carousel growim-owl__carousel growim-owl__carousel--with-shadow growim-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+        "items": 1,
+        "margin": 30,
+        "loop": false,
+        "smartSpeed": 700,
+        "nav": true,
+        "navText": ["<span class=\"flaticon-long-arrow-left\"></span>","<span class=\"flaticon-long-arrow-right\"></span>"],
+        "dots": false,
+        "autoplay": false, -->
+        <!-- "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 2
+            },
+            "992": {
+                "items": 3
+            } -->
+        <!-- }
+    }'>
+            <div class="item">
+                <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                    <div class="blog-card__image">
+                        <img src="assets/images/blog/blog-1-1.png" alt="Business strategy for marketing system">
+                        <img src="assets/images/blog/blog-1-1.png" alt="Business strategy for marketing system"> -->
+                        <!-- <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">Business strategy for marketing system</span> -->
+                            <!-- </a> -->
+                    <!-- </div> -->
+                    <!-- <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <a class="blog-card__meta__cat" href="blog-details-right.html">Business</a>
+                            <div class="blog-card__meta__date">March 24, 2024</div><!-- /.blog-card__date -->
+                        <!-- </div> -->
+                        <!-- <h3 class="blog-card__title"><a href="blog-details-right.html">Business strategy for marketing system</a></h3>
+                        <div class="blog-card__bottom">
+                            <div class="blog-card__author">
+                                <img src="assets/images/blog/blog-author-1-1.jpg" alt="growim"> -->
+                                <!-- <div class="blog-card__author__content"> -->
+                                    <!-- <span><a href="blog-list-right.html">Admin</a></span>Cody Fisher -->
+                                <!-- </div>  -->
+                            <!-- </div>
+                            <a href="blog-details-right.html" class="blog-card__link"> -->
+                                <!-- <i class="fas fa-arrow-right"></i> -->
+                            <!-- </a> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="item">
+                <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                    <div class="blog-card__image">
+                        <img src="assets/images/blog/blog-1-2.png" alt="Why is Supply Chain Visibility So Important?">
+                        <img src="assets/images/blog/blog-1-2.png" alt="Why is Supply Chain Visibility So Important?"> -->
+                        <!-- <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">Why is Supply Chain Visibility So Important?</span> -->
+                            <!-- </a> -->
+                    <!-- </div> -->
+                    <!-- <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <a class="blog-card__meta__cat" href="blog-details-right.html">Corporate</a>
+                            <div class="blog-card__meta__date">April 16, 2024</div><!-- /.blog-card__date -->
+                        <!-- </div> -->
+                        <!-- <h3 class="blog-card__title"><a href="blog-details-right.html">Why is Supply Chain Visibility So Important?</a></h3> -->
+                        <!-- <div class="blog-card__bottom"> --> 
+                            <!-- <div class="blog-card__author"> -->
+                                <!-- <img src="assets/images/blog/blog-author-1-1.jpg" alt="growim"> -->
+                                <!-- <div class="blog-card__author__content"> -->
+                                    <!-- <span><a href="blog-list-right.html">Admin</a></span>Cody Fisher -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <a href="blog-details-right.html" class="blog-card__link"> -->
+                                <!-- <i class="fas fa-arrow-right"></i> -->
+                            <!-- </a> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="item"> -->
+                <!-- <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                    <div class="blog-card__image">
+                        <img src="assets/images/blog/blog-1-3.png" alt="Discover a better way of redefining company goals">
+                        <img src="assets/images/blog/blog-1-3.png" alt="Discover a better way of redefining company goals"> -->
+                        <!-- <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">Discover a better way of redefining company goals</span> -->
+                            <!-- </a> -->
+                    <!-- </div> -->
+                    <!-- <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <a class="blog-card__meta__cat" href="blog-details-right.html">Marketing</a>
+                            <div class="blog-card__meta__date">March 24, 2024</div><!-- /.blog-card__date -->
+                        <!-- </div> -->
+                        <!-- <h3 class="blog-card__title"><a href="blog-details-right.html">Discover a better way of redefining company goals</a></h3> -->
+                        <!-- <div class="blog-card__bottom">
+                            <div class="blog-card__author">
+                                <img src="assets/images/blog/blog-author-1-1.jpg" alt="growim">
+                                <div class="blog-card__author__content"> -->
+                                    <!-- <span><a href="blog-list-right.html">Admin</a></span>Cody Fisher -->
+                                <!-- </div>
+                            </div>
+                            <a href="blog-details-right.html" class="blog-card__link">
+                                <i class="fas fa-arrow-right"></i> -->
+                            <!-- </a> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </section>  -->
+ <!-- seven end  -->
+      
+        <footer class="main-footer main-footer--home-five">
+            <div class="main-footer__bg" style="background-image: url(assets/images/shapes/footer-bg-1-1.png);"></div>
+            <div class="main-footer__shape" style="background-image: url(assets/images/shapes/footer-1-shape-1.png);"></div>
+            <!-- /.main-footer__bg -->
+            <div class="main-footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="footer-widget footer-widget--about">
+                                <a href="index.html" class="footer-widget__logo">
+                                    <img src="assets/capg-logo-white.jpg" width="200" alt="Growim HTML Template">
+                                </a>
+                                <p class="footer-widget__text">
+                                    Your trusted partners for seamless financial solutions, from taxation to corporate compliance..
+                                </p>
+                                <a class="growim-btn growim-btn--white" href="contact.html">
+                                    <span class="growim-btn__text">Contact Us</span>
+                                </a>
+                                <div class="footer-widget__social">
+                                    <p class="footer-widget__social__text">Follow on</p>
+                                   
+                                    <a href="https://www.linkedin.com/company/c-a-p-g-co/posts/?feedView=all">
+                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                   
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget">
+                                <h2 class="footer-widget__title">Quick Link</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="https://www.incometax.gov.in/">Income Tax</a></li>
+                                    <li><a href=" https://www.gst.gov.in/
+                                        ">GSTN</a></li>
+                                    <li><a href="https://www.mca.gov.in/
+                                        ">MCA</a></li>
+                                    <li><a href="https://www.rbi.org.in/
+                                        ">RBI</a></li>
+                                    <li><a href=" https://www.icai.org/">ICAI</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">our services</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li>Auditing</li>
+                                    <li>Taxation</li>
+                                    <li>Financial Advisory</li>
+                                    <li>Corporate Law Compliance
+                                    </li>
+                                    <li>Registrations</li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-xl-4">
+                            <div class="footer-widget footer-widget--contact">
+                                <h2 class="footer-widget__title">contact us</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__info">
+                                    <li><i class="flaticon-pin"></i>Phase 5, GVR’s pride, HIG- 85A, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072</li>
+                                    <li><i class="flaticon-phone"></i>9492492970, 9490549793</li>
+                                    <li><i class="flaticon-email"></i><a href="mailto:capgandco@yahoo.com">capgandco@yahoo.com</a></li>
+                                </ul><!-- /.list-unstyled -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__top -->
+            <div class="main-footer__bottom">
+                <div class="container">
+                    <div class="main-footer__bottom__inner">
+                        <p class="main-footer__copyright">
+                            &copy; Copyright <span class="dynamic-year"></span> by CAPG.
+                        </p>
+                        <ul class="main-footer__bottom__menu">
+                            <li><a href="checkout.html">Terms & Conditions</a></li>
+                            <li><a href="contact.html">Privacy Policy</a></li>
+                        </ul>
+                    </div><!-- /.main-footer__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__bottom -->
+        </footer><!-- /.main-footer -->
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/capg-logo-white.jpg" width="155" alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:capgandco@yahoo.com">capgandco@yahoo.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    9492492970, 9490549793
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+               
+                
+                <a href="https://www.linkedin.com/company/c-a-p-g-co/posts/?feedView=all">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    <span class="sr-only">Linkedin</span>
+                </a>
+               
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="growim-btn">
+                    <span class="growim-btn__text"><i class="flaticon-search"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+    <!-- Sidebar One Start -->
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay"></div><!-- /.siderbar-ovarlay -->
+        <div class="sidebar-one__content">
+            <div class="sidebar-one__close"><i class="flaticon-close"></i></div><!-- /.siderbar-close -->
+            <div class="sidebar-one__logo">
+                <a href="index.html" aria-label="logo image"><img src="assets/capg-logo-white.jpg" alt="capg" width="160"></a>
+            </div><!-- /.sidebar-one__logo-box -->
+            <p class="sidebar-one__text">
+                Your trusted partners for seamless financial solutions, from taxation to corporate compliance..
+            </p>
+            <h4 class="sidebar-one__title">Contact Info:</h4>
+            <ul class="sidebar-one__info">
+                <li>
+                    <span class="fas fa-map-marker-alt"></span>
+                    Phase 5, GVR’s pride, HIG- 85A, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:capgandco@yahoo.com"></a>
+                </li>
+                <li>
+                    <span class="fas fa-phone-alt"></span>
+9492492970, 9490549793               </li>
+            </ul>
+            <div class="sidebar-one__social">
+                
+               
+                <a href="https://www.linkedin.com/company/c-a-p-g-co/posts/?feedView=all">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    <span class="sr-only">Linkedin</span>
+                </a>
+             
+            </div><!-- /sidebar-one__socila -->
+           
+        </div><!-- /.sidebar__content -->
+    </aside>
+    <!-- Sidebar One Start -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__text">back top</span>
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+    </a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/jquery-flipster-master/jquery.flipster.min.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <!-- template js -->
+    <script src="assets/js/growim.js"></script>
 </body>
+
 </html>
